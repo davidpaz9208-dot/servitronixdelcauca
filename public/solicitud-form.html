@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Registro del formulario de solicitud</title>
+  </head>
+  <body>
+    <form name="solicitud" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="solicitud" />
+      <input type="hidden" name="subject" value="Nueva solicitud de servicio (%{submissionId})" />
+      <input name="nombre" />
+      <input name="telefono" />
+      <input name="correo" type="email" />
+      <select name="servicio">
+        <option value="">Selecciona una línea…</option>
+        <option value="tv-audio">Televisores y sonido</option>
+        <option value="refrigeracion">Neveras y congeladores</option>
+        <option value="lavado">Lavadoras y secadoras</option>
+        <option value="otro">Otro equipo o no estoy seguro</option>
+      </select>
+      <input name="zona" />
+      <textarea name="mensaje"></textarea>
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>
